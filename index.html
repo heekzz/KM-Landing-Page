@@ -8,54 +8,115 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <title>Kenji Manjaro</title>
 </head>
 
 <body>
-  <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active img-responsive" style="background-image: url('img/watch_black_logo.png')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>First Slide</h3>
-            <p>This is a description for the first slide.</p>
+
+  <!-- Carousel image slider at top -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url('http://placehold.it/1920x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-1">Live on Kickstarter!</h1>
+          <p>We just released our Kickstarter campaign. Become a backer now!</p>
+          <p><a role="button" href="https://www.kickstarter.com/projects/1810064877/good-feels-on-wheels-post-production" class="btn btn-success btn-lg">Back us now!</a></p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('http://placehold.it/1920x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4">Sign up for newsletter!</h1>
+          <p>Interested in our watches? Sign up below to be noticed when our pruducts are ready for order.</p>
+          <p>
+            <form class="form-inline justify-content-center">
+              <div class="form-group mb-2">
+                <input type="email" class="form-control" id="signup-email" placeholder="E-mail...">
+              </div>
+              <button type="submit" class="btn btn-success mb-2">Sign up!</button>
+            </form>
+          </p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('http://placehold.it/1920x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Third Slide</h3>
+          <p>This is a description for the third slide.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax" style="background-image: url('img/parallax_1.jpg')"> </div>
+  
+
+  <div class="container py-2">
+    <div class="row">
+      <h1 class="display-4 col-xs-12 col-md-12">Kenji Manjaro&trade; Watches</h1> 
+      <hr class="col-md-12">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img img-fluid" src="http://placehold.it/400x400">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Image Title</h5>
+            <p class="card-text">Example text</p>
           </div>
         </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('http://placehold.it/1900x600')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Second Slide</h3>
-            <p>This is a description for the second slide.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img img-fluid" src="http://placehold.it/400x400">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Image Title</h5>
+            <p class="card-text">Example text</p>
           </div>
         </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Third Slide</h3>
-            <p>This is a description for the third slide.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img img-fluid" src="http://placehold.it/400x400">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Image Title</h5>
+            <p class="card-text">Example text</p>
           </div>
         </div>
       </div>
     </div>
-  </header>
-  <div class="parallax" style="background-image: url('img/parallax_1.jpg')"> </div>
-  <div class="container" style="height: 400px">
-    <h1>Hello World!</h1>
   </div>
+
+
   <div class="parallax" style="background-image: url('img/parallax_2.jpg')"> </div>
-  
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-xs-12">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Kenji Manjaro Ltd.</li>
-            <li class="list-group-item">Alfred Nobels Allé 29<br>141 52 Huddinge<br>Sweden</li>
-          </ul>
+
+  <!-- Footer -->
+  <footer class="container py-5">
+    <div class="row border-between">
+      <div class="col-md-4 col-xs-12">
+        <img class="img-fluid" src="img/KenjiManjaro_logo_text.png">
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <div class="row">
+          <a class="btn btn-secondary col-md-3 mx-3" href="https://facebook.com/kenjimanjaro"><i class="fab fa-3x fa-facebook-square"></i></a>
+          <a class="btn btn-secondary col-md-3 mx-3" href="https://instagram.com/kenjimanjaro"><i class="fab fa-3x fa-instagram"></i></a>
+          <a class="btn btn-secondary col-md-3 mx-3" href="https://www.kickstarter.com/projects/1810064877/good-feels-on-wheels-post-production"><i class="fab fa-3x fa-kickstarter-k"></i></a>
         </div>
-        <div class="col-md-4 col-xs-12"></div>
-        <div class="col-md-4 col-xs-12"></div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <address>
+          <strong>Kenji Manjaro Ltd.</strong>
+          <p>Alfred Nobels Allé 29<br>141 52 Huddinge<br>Sweden</p>
+        </address>
+        <hr>
+        <address>
+          <a href="mailto:info@kenjimanjaro.com">info@kenjimanjaro.com</a>
+        </address>
       </div>
     </div>
   </footer>
